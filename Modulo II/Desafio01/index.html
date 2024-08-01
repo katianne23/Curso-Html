@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Clínica Médica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <!-- Aqui vai o seu menu -->
+            <ul>
+                <li><a href="#principal">Página Principal</a></li>
+                <li><a href="#sobre">Sobre a Clínica</a></li>
+                <li><a href="#hora">Horário de Atendimento</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <img alt="imagem clinica"
+                    src="https://img.freepik.com/vetores-premium/edificio-do-hospital-para-ilustracao-vetorial-de-fundo-de-desenhos-animados-de-saude-com-ambulancia-medico-paciente-enfermeiras-e-exterior-da-clinica-medica_2175-1513.jpg">
+            </div>
+
+            <div class="content">
+                <h1>Horário de Atendimento
+                </h1>
+                <p>Confira os horários de atendimento para nossos diversos serviços:</p>
+                <table border="1" Cellpadding="10px" width="100%">
+                    <thead>
+                        <tr>
+                            <th>Serviços</th>
+                            <th>Segunda a Sexta</th>
+                            <th>Sábados</th>
+                            <th>Feriados</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Clínica Geral</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td>08h - 14h</td>
+                        </tr>
+                        <tr>
+                            <td>Psicologia</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td>08h - 14h</td>
+                        </tr>
+                        <tr>
+                            <td>Pediatria</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 18h</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Oftalmologia</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 18h</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="footer">
+                <h2>Contato</h2>
+                <p>Para entra en contato conosco, utilize as informações abaixo: </p>
+                <p>Telefone: (33) 3332-2322</p>
+                <p>Whatsapp: (33) 3332-2322</p>
+                <p>Endereço: Rua Exemplo, 123, Cidade - Estado</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10000!2d-48.000000!3d-15.000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0x0!2zMTXCsDQxJzMwLjQiUyDgiDF1zNDEyNDY!5e0!3m2!1spt-BR!2sbr!4v0000000000000"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <br />
+                <br />
+                <h3>Formulário de Contato</h3>
+                <form action="enviar_contato.php" method="post">
+                    <label for="nome">Nome: </label>
+                    <input type="text" id="nome" name="nome" required>
+                    <br />
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" required>
+                    <br />
+                    <label for="nome">Assunto: </label>
+                    <input type="text" id="assunto" name="assunto" required>
+                    <br />
+                    <label for="mensagem">Mensagem: </label>
+                    <textarea rows="4" id="mensagem" name="mensagem" required></textarea>
+                    <br>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
